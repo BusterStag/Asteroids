@@ -41,7 +41,7 @@ def main():
         for ast in asteroids:
             for s in shots:
                 if s.collision(ast) == True:
-                    Asteroid.split(ast)
+                    ast.split()
                     pygame.sprite.Sprite.kill(s)
         for dr in drawable:
             dr.draw(screen)
